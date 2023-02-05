@@ -1,0 +1,143 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(29, 61, 61);
+}
+
+/*
+Lista das opcions do menú principal
+*/
+
+section{
+    margin: 2%;
+    border-radius: 3px;
+    border: 2px solid white;
+    background-color: black;
+    height: 90vh;
+    color: yellow;
+}
+
+#inicio{
+    font-family: 'Zen_Dots';
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 7rem;
+}
+
+
+.listaOpcions{
+    list-style: none;
+    padding-top: 20%;   
+}
+
+/* li:hover{
+    cursor: pointer;
+} */
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/*
+    Estilos para a parte do taboleiro do xogo
+*/
+
+#xogo{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "marcador taboleiro";
+    grid-template-columns: 1fr 4fr;
+    margin: 7%;
+    grid-gap: 10px;
+}
+
+/*
+Parte esquerda do taboleiro donde ensinamos o tempo e o nivel
+*/
+#marcadorXogo{
+    grid-area: marcador;
+    font-size: 3rem;
+    border: 1px solid yellow;
+    height: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 10px;
+    
+}
+
+
+#marcadorXogo ul{
+    list-style: none;
+    
+}
+
+/*
+    Traballamos coa parte dereita do taboleiro donde van ir as imaxes
+*/
+#imaxes{
+    width: 80%;
+    padding: 10px;
+    grid-area: taboleiro;
+    border: 1px solid yellow;
+    height: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    color: white;
+}
+
+table{
+   border-spacing: 10px 10px; 
+}
+
+.nivel1{
+    height: 120px;
+    width: 120px;
+}
+
+.nivel2{
+    height: 100px;
+    width: 100px;
+}
+
+.nivel3{
+    height: 80px;
+    width: 80px;
+}
+
+#taboleiro{
+    text-align: center;
+}
+
+#taboleiro h1{
+    font-size: 3rem;
+}
+
+#taboleiro #volverAlMenu{
+    width: 100px;
+    height: 40px;
+}
+
+
+
+
